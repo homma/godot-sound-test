@@ -11,14 +11,15 @@ func _ready():
 
 func set_music():
     var music = Music.new()
-    var c4 = 261.6256
-    var d4 = 293.6648
-    var e4 = 329.6276
-    var f4 = 349.2282
-    var g4 = 391.9954
-    var a5 = 440.0000
-    var b5 = 493.8833
-    var c5 = 523.2511
+
+    const c4 = 261.6256
+    const d4 = 293.6648
+    const e4 = 329.6276
+    const f4 = 349.2282
+    const g4 = 391.9954
+    const a5 = 440.0000
+    const b5 = 493.8833
+    const c5 = 523.2511
 
     music.add_note(0.0, c4, 1)
     music.add_note(2.0, e4, 1)
