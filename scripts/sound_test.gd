@@ -35,6 +35,6 @@ func set_music():
     music.add_note(15.0, g4, 1)
     music.add_note(16.0, a5, 1)
     music.add_note(17.0, b5, 1)
-    music.add_note(18.0, c5, 2)
+    music.add_note(18.0, c5, 4)
 
     player.music = music
