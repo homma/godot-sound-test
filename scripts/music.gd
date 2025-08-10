@@ -10,6 +10,9 @@ func _init():
     started = []
     music_queue = []
 
+func a(start_time: float, hz: float, duration: float):
+    add_note(start_time, hz, duration)
+
 func add_note(start_time: float, hz: float, duration: float):
     var note := QueuedNote.new(start_time, hz, duration)
 
