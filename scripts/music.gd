@@ -10,11 +10,11 @@ func _init():
     started = []
     music_queue = []
 
-func a(start_time: float, hz: float, duration: float):
-    add_note(start_time, hz, duration)
+func a(start_time: float, hz: float, duration: float, p_wave: int = Note.Wave.SINE):
+    add_note(start_time, hz, duration, p_wave)
 
-func add_note(start_time: float, hz: float, duration: float):
-    var note := QueuedNote.new(start_time, hz, duration)
+func add_note(start_time: float, hz: float, duration: float, p_wave: int = Note.Wave.SINE):
+    var note := QueuedNote.new(start_time, hz, duration, p_wave)
 
     if music_queue.size() == 0:
         music_queue.push_back(note)
